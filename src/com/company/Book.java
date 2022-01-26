@@ -22,4 +22,8 @@ public class Book {
     public int getBookReleaseYear() {
         return this.bookReleaseYear;
     }
+
+    public void setBookReleaseYear(int year) {
+        this.bookReleaseYear = year;
+    }
 }
