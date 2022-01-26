@@ -1,13 +1,25 @@
 package com.company;
 
 public class Book {
-    public String bookTitle;
-    public String bookAuthor;
-    public int bookReleaseYear;
+    private String bookTitle;
+    private String Author;
+    private int bookReleaseYear;
 
     public Book(String bookTitle, String bookAuthor, int bookReleaseYear) {
         this.bookTitle = bookTitle;
-        this.bookAuthor = bookAuthor;
+        this.Author = bookAuthor;
         this.bookReleaseYear = bookReleaseYear;
+    }
+
+    public String getBookTitle() {
+        return this.bookTitle;
+    }
+
+    public String getBookAuthor() {
+        return this.Author;
+    }
+
+    public int getBookReleaseYear() {
+        return this.bookReleaseYear;
     }
 }
