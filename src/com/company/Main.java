@@ -32,7 +32,7 @@ public class Main {
         String surnameAuthor = "Кинг";
         int bookReleaseYear = 2016;
         Book theShining = new Book(bookTitle, new Author(nameAuthor, surnameAuthor), bookReleaseYear);
-        writeBookToArray(theShining,books);
+        writeBookToArray(theShining, books);
         theShining.setBookReleaseYear(2000);
         // 2-я книга
         bookTitle = "Мастер и Маргарита";
@@ -40,15 +40,14 @@ public class Main {
         surnameAuthor = "Булгаков";
         bookReleaseYear = 2020;
         Book masterAndMargarita = new Book(bookTitle, new Author(nameAuthor, surnameAuthor), bookReleaseYear);
-        writeBookToArray(masterAndMargarita,books);
+        writeBookToArray(masterAndMargarita, books);
         // 3-я книга
         bookTitle = "Гарри Поттер и филосовский камень";
         nameAuthor = "Джоан";
         surnameAuthor = "Роулинг";
         bookReleaseYear = 2000;
         Book harryPotter = new Book(bookTitle, new Author(nameAuthor, surnameAuthor), bookReleaseYear);
-        writeBookToArray(harryPotter,books);
+        writeBookToArray(harryPotter, books);
         printBooks(books);
-        Arrays.toString(books);
     }
 }
