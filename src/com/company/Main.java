@@ -1,26 +1,40 @@
 package com.company;
 
-import java.util.Arrays;
-
 public class Main {
 
-    public static Book writeBookToArray(Book name, Book arr[]) {
+    public static void writeBookToArray(Book name, Book arr[]) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == null) {
                 arr[i] = name;
                 break;
             }
         }
-        return name;
     }
 
-    public static Book printBooks (Book arr[]){
+    public static void printBooks (Book arr[]){
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i].getBookTitle());
             System.out.println(arr[i].getBookAuthor());
             System.out.println(arr[i].getBookReleaseYear());
         }
-        return null;
+    }
+
+    public static void printBookByName(String name, Book arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            if (name == arr[i].getBookTitle()){
+                System.out.println(arr[i].getBookTitle());
+                System.out.println(arr[i].getBookAuthor());
+                System.out.println(arr[i].getBookReleaseYear());
+            }
+        }
+    }
+
+    public static void changingYearBookByName(String name,int year, Book arr[]){
+        for (int i = 0; i < arr.length; i++) {
+            if (name == arr[i].getBookTitle()) {
+                arr[i].setBookReleaseYear(year);
+            }
+        }
     }
 
 
@@ -49,5 +63,10 @@ public class Main {
         Book harryPotter = new Book(bookTitle, new Author(nameAuthor, surnameAuthor), bookReleaseYear);
         writeBookToArray(harryPotter, books);
         printBooks(books);
+        String name = "Мастер и Маргарита";
+        printBookByName(name,books);
+        int year = 1999;
+        changingYearBookByName(name,year,books);
+        printBookByName(name,books);
     }
 }
