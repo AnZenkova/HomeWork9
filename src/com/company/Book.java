@@ -5,9 +5,9 @@ public class Book {
     private String Author;
     private int bookReleaseYear;
 
-    public Book(String bookTitle, String bookAuthor, int bookReleaseYear) {
+    public Book(String bookTitle, com.company.Author Author, int bookReleaseYear) {
         this.bookTitle = bookTitle;
-        this.Author = bookAuthor;
+        this.Author = Author.getNameAuthor()+Author.getSurnameAuthor();
         this.bookReleaseYear = bookReleaseYear;
     }
 

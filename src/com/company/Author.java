@@ -5,7 +5,7 @@ public class Author {
     private String surnameAuthor;
 
     public Author(String nameAuthor, String surnameAuthor) {
-        this.nameAuthor = nameAuthor;
+        this.nameAuthor = nameAuthor + ' ';
         this.surnameAuthor = surnameAuthor;
     }
 
