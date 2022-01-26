@@ -11,7 +11,7 @@ public class Main {
         writeBookToArray(firstBook, books);
         firstBook.setBookReleaseYear(2000);
         Book secondBook = new Book("Мастер и Мргарита", firstAuthor, 2020);
-        writeBookToArray(firstBook, books);
+        writeBookToArray(secondBook, books);
         Book thirdBook = new Book("Темная Башня. Стрелок", firstAuthor, 2016);
         writeBookToArray(thirdBook, books);
         printBooks(books);
